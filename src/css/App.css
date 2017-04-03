@@ -12,6 +12,23 @@
   height: 150px;
   padding: 20px;
   color: white;
+  font-family: 'Bilbo', cursive;
+}
+
+#header {
+ background-image: url("/wayferer1.jpg");
+ bottom: 0px;
+ position: fixed;
+ min-width: 100%;
+ min-height: 100%;
+ z-index: -1;
+ background-repeat: no-repeat;
+ background-position: center;
+background-size: cover;
+}
+
+.Title{
+  margin-top: 325px;
 }
 
 .App-intro {

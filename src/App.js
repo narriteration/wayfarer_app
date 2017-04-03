@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import 'react-materialize';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="App-header" id="header">
+          <div className="Title">
+              <h1>Welcome to Wayferer!</h1>
+              <p>A travel community for users to share city-specific tips about their favorite locations around the world.</p>
+                <button type="button" className="btn btn-primary">Log In</button>
+                <button type="button" className="btn btn-primary">Sign Up</button>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </div>
+
+
       </div>
     );
   }
