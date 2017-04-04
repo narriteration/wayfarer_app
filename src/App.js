@@ -10,8 +10,8 @@ class App extends Component {
       <div className="App">
         <div className="App-header" id="header">
           <div className="Title">
- <h1>Welcome to Wayfarer!</h1>
- </div>
+             <h1>Welcome to Wayfarer!</h1>
+          </div>
         <a className="waves-effect waves-light btn-large">Log In</a>
         <a className="waves-effect waves-light btn-large">Sign Up</a>
         </div>
