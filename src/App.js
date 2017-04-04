@@ -24,3 +24,5 @@ class App extends Component {
 }
 
 export default App;
+
+// create all views in single page app and then break them up
