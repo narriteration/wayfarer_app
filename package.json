@@ -9,6 +9,7 @@
     "firebase": "^3.7.4",
     "firebaseui": "^1.0.0",
     "foreman": "^2.0.0",
+    "history": "^1.17.0",
     "lodash": "^4.17.4",
     "mongodb": "^2.2.25",
     "mongoose": "^4.9.2",
