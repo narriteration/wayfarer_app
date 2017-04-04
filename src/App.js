@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import 'react-materialize';
 import Splash from './components/Splash'
 
