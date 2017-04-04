@@ -1,8 +1,8 @@
-.App {
+.Splash {
     text-align: center;
 }
 
-.App-header {
+.Splash {
     background-color: #222;
     height: 150px;
     padding: 20px;
@@ -26,7 +26,7 @@
     margin-top: 280px;
 }
 
-.App-intro {
+.Splash-intro {
     font-size: large;
 }
 

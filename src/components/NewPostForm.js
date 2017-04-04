@@ -16,7 +16,7 @@ export default class NewPostForm extends Component {
   handleSubmit(event) {
     console.log('A post was made: ' + this.state.value);
     event.preventDefault();
-  }
+ }
 
   render() {
     return (
