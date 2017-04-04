@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
@@ -15,6 +16,32 @@
     -->
     <title>React App</title>
   </head>
+
+var firebase = require("firebase/app");
+require("firebase/auth");
+
+  <!-- CDN script tags -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-auth.js"></script>
+
+  <!-- Initialization snippet -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+  <script>
+  var firebase = require("firebase/app");
+  require("firebase/auth");
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBUw2ggcT-EeyPWgDJI6bDyRhWnWpmMk1s",
+      authDomain: "wayfarer-application.firebaseapp.com",
+      databaseURL: "https://wayfarer-application.firebaseio.com",
+      projectId: "wayfarer-application",
+      storageBucket: "wayfarer-application.appspot.com",
+      messagingSenderId: "473463191892"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- END initialization snippet -->
+
   <body>
     <div id="root"></div>
     <!--
