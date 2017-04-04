@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import App from './App';
+import { Router, Route, browserHistory } from 'react-router';
+import Splash from '../src/components/Splash';
 import './css/index.css';
 
 //import './index.css';
@@ -9,11 +9,9 @@ import './css/index.css';
 
 
 
-
-
 ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path='/' component={App}>
+  <Router history={browserHistory}>
+    <Route path='/' component={Splash}>
     </Route>
   </Router>,
   document.getElementById('root')
