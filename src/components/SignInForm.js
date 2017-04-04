@@ -5,7 +5,7 @@ import 'react-materialize';
 
 
 class SignInForm extends Component {
-  render() { 
+  render() {
     return (
       <div className="signInForm">
 

@@ -5,7 +5,7 @@ import 'react-materialize';
 
 
 class SignUpForm extends Component {
-  render() { 
+  render() {
     return (
       <div className="signUpForm">
 
