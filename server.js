@@ -3,7 +3,8 @@
 //import dependencies
 var express = require('express'),
     mongoose = require('mongoose'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    db = require('./model');
 
 
 //TODO: require model's files
@@ -40,6 +41,9 @@ app.use(function(req, res, next) {
 app.route('/')
   .get(function(req, res) {
   res.send('Server.js is running');
+  // .post(function(req, res) {
+  //     db.Location.
+  // })
 });
 
 app.listen(port, function() {
