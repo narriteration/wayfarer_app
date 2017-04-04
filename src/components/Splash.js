@@ -3,6 +3,7 @@ import '../css/Splash.css';
 import 'react-materialize';
 
 
+
 class Splash extends Component {
  render() {
    return (
