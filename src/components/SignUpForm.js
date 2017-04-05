@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 // import 'react-materialize';
 import NewUserForm from './NewUserForm.js'
 
-
-
 class SignUpForm extends Component {
   render() {
     return (

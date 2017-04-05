@@ -8,7 +8,7 @@ class CityInfo extends Component {
     return (
         <div className="cityInfo">
             <h1>San Francisco</h1>
-            <img src="## TODO: add src from database or seeded data ###" alt="Picture of city!">
+            <img src="## TODO: add src from database or seeded data ###" alt="Picture of city!"/>
         </div>
     );
   }
