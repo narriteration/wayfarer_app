@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import 'react-materialize';
 import NavBarMain from './components/NavBarMain'
 import UserCityFeed from './components/UserCityFeed'

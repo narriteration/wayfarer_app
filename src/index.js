@@ -8,10 +8,6 @@ import SignUpForm from '../src/components/SignUpForm';
 
 import './css/index.css';
 
-//import './index.css';
-//import * as firebase from 'firebase';
-
-
 
 ReactDOM.render(
   <Router history={browserHistory}>
