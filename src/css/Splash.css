@@ -33,3 +33,9 @@
 .btn {
  margin: 3px;
 }
+
+.cityInfo {
+  border: .5px black solid;
+  background-color: grey;
+  text-align: center;
+}
