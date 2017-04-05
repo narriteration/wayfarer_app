@@ -11,7 +11,7 @@ var express = require('express'),
 
 //Create instances
 var app = express();
-//var router = express.Router();
+var router = express.Router();
 
 
 //Set port
@@ -37,13 +37,9 @@ app.use(function(req, res, next) {
    next();
  });
 
- //set route path
-app.route('/')
-  .get(function(req, res) {
-  res.send('Server.js is running');
-  // .post(function(req, res) {
-  //     db.Location.
-  // })
+//set route path
+router.get('/', function(req, res) {
+  res.json({message: 'API initialized'});
 });
 
 //creating user
