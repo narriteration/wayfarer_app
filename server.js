@@ -7,11 +7,8 @@ var express = require('express'),
     db = require('./models');
 
 
-//TODO: require model's files
-
 //Create instances
 var app = express();
-var router = express.Router();
 
 
 //Set port
@@ -19,7 +16,6 @@ const port = process.env.API_PORT || 3001;
 
 //db config
 //ADD YOUR INFO HERE!
-//mongoose.connect
 
 //config API to use bodyParser and look for JSON in req.body
 app.use(bodyParser.urlencoded({extended: true }));
@@ -27,19 +23,21 @@ app.use(bodyParser.json());
 
 //Prevent CORS errors
 app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
+  res.setHeader('AccessControlAllowOrigin', '*');
+  res.setHeader('AccessControlAllowCredentials', 'true');
+  res.setHeader('AccessControlAllowMethods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
+  res.setHeader('AccessControlAllowHeaders', 'AccessControlAllowHeaders, Origin,Accept, XRequestedWith, ContentType, AccessControlRequestMethod, AccessControlRequestHeaders');
 
   //Remove caching
-   res.setHeader('Cache-Control', 'no-cache');
+   res.setHeader('CacheControl', 'nocache');
    next();
  });
 
+
 //set route path
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
   res.json({message: 'API initialized'});
+
 });
 
 //creating user
@@ -60,14 +58,14 @@ app.delete('/api/user/:userId', function(req, res){
 
 //edit user
 app.put('/api/user/:userId', function(req, res){
-console.log(req.body)
-db.User.findOneAndUpdate({_id: req.params.userId}, req.body, {new:true}, function(err, foundUser) {
-    if (err) {
-      console.log('got an error');
-    }
-  console.log(foundUser)
-    res.json(foundUser)
-});
+    console.log(req.body)
+    db.User.findOneAndUpdate({_id: req.params.userId}, req.body, {new:true}, function(err, foundUser) {
+        if (err) {
+          console.log('got an error');
+        }
+      console.log(foundUser)
+        res.json(foundUser)
+    });
   // at this point person is null.
 });
 
@@ -99,7 +97,7 @@ console.log(req.body)
       console.log(foundComment)
         res.json(foundComment)
   });
-});
+ });
 
 //get single post
 app.get('/api/comments/:commentId', function(req, res) {
@@ -123,6 +121,6 @@ app.get('/api/comments', function(req, res) {
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wayfarer_app");
 
-app.listen(port, function() {
- console.log(`api running on port ${port}`);
-});
+ app.listen(port, function() {
+  console.log(`api running on port ${port}`);
+ });

@@ -5,6 +5,7 @@ import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
 import CommentForm from './CommentForm';
 
+
 class CityFeed extends Component {
 
 // TODO: Styles
@@ -21,6 +22,7 @@ class CityFeed extends Component {
           <CityInfo cityName="San Francisco"/> // renders information specific to THIS city only
           <AllCityPosts /> // renders all CityPosts that ANY user has published about this city
           <CommentForm /> // renders form to create new post about THIS city, on submit will close and add this post to CityPosts
+
       </div>
     );
   }

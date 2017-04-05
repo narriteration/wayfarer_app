@@ -13,6 +13,7 @@ constructor(props){
         <div className="cityInfo">
             <h1>{this.props.cityName}</h1>
             <img src="## TODO: add src from database or seeded data ###" alt="The city!"/>
+
         </div>
     );
   }
