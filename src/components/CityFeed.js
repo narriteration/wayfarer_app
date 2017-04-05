@@ -5,7 +5,7 @@ import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
 import NewPostForm from './NewPostForm';
 
-class UserCityFeed extends Component {
+class CityFeed extends Component {
 
 // TODO: Styles
 // * write specific styles to make all three imported components pretty
@@ -16,7 +16,8 @@ class UserCityFeed extends Component {
 
   render() {
     return (
-      <div className="userCityFeed">
+
+      <div className="CityFeed">
           <CityInfo /> // renders information specific to THIS city only
           <AllCityPosts /> // renders all CityPosts that ANY user has published about this city
           <NewPostForm /> // renders form to create new post about THIS city, on submit will close and add this post to CityPosts
@@ -25,4 +26,4 @@ class UserCityFeed extends Component {
   }
 }
 
-export default UserCityFeed;
+export default CityFeed;
