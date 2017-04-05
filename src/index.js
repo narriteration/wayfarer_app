@@ -5,7 +5,8 @@ import Splash from '../src/components/Splash';
 import App from './App';
 import SignInForm from '../src/components/SignInForm';
 import SignUpForm from '../src/components/SignUpForm';
-import UserCityFeed from '../src/components/UserCityFeed'
+import UserCityFeed from '../src/components/UserCityFeed';
+
 
 import './css/index.css';
 
