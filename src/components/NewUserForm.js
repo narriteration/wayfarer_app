@@ -14,10 +14,11 @@ class NewUserForm extends Component {
     render() {
         return (
             <div className="newUserForm">
-                <h1>Sign up form:</h1>
+                <h1>Welcome!</h1>
+                <h3>Please signup or sign in:</h3>
                 <form action="### TODO: what view will user see on click? OR is this linked to DB? ####" method="post">
-                    <input id="create-userName" type="text" name="userName" placeholder="Pick a username"/>
-                    <input id="create-userCity" type="text" name="userCity" placeholder="What is your current city?"/>
+                    <input id="create-userName" type="text" name="userName" placeholder="Username (no spaces or characters please)"/>
+                    <input id="create-userCity" type="text" name="userCity" placeholder="Your current city"/>
                     <button type="submit" name="create-user-button">Create Your Account</button>
                 </form>
             </div>
