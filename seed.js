@@ -1,4 +1,5 @@
 var db = require("./models");
+var locations = require("./locations");
 
 
 var UserList =[];
