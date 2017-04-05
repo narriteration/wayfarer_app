@@ -125,11 +125,6 @@ app.get('/api/comments', function(req, res) {
     })
 })
 
-
-
-
-
-
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wayfarer_app");
 
 app.listen(port, function() {
