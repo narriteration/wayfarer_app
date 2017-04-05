@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../css/App.css';
+import '../css/Splash.css';
 import 'react-materialize';
 
 class NewUserForm extends Component {
