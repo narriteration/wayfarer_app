@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
 import '../css/Splash.css';
 import 'react-materialize';
+import { browserHistory } from 'react-router';
 
 class NewUserForm extends Component {
+
+
+  goToUserCity(e) {
+    e.preventDefault();
+    browserHistory.push('/user-city');
+  }
+
 
     // TODO: STYLING
     // * add Materialize classes
@@ -19,7 +27,7 @@ class NewUserForm extends Component {
                 <form action="### TODO: what view will user see on click? OR is this linked to DB? ####" method="post">
                     <input id="create-userName" type="text" name="userName" placeholder="Username (no spaces or characters please)"/>
                     <input id="create-userCity" type="text" name="userCity" placeholder="Your current city"/>
-                    <button type="submit" name="create-user-button">Create Your Account</button>
+                    <button type="submit" name="create-user-button" type="submit" onClick={(e) => this.goToUserCity(e)}>Create Your Account</button>
                 </form>
             </div>
         );
