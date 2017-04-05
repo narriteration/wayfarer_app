@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../css/Splash.css';
 import 'react-materialize';
 
 class CityInfo extends Component {
@@ -7,8 +6,9 @@ class CityInfo extends Component {
   render() {
     return (
         <div className="cityInfo">
-            <h1>Your City Name</h1>
-            <img src="#" alt="Your city!"/>
+            <h1>San Francisco</h1>
+            <img src="## TODO: add src from database or seeded data ###" alt="The city!"/>
+
         </div>
     );
   }

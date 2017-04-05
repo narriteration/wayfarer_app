@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 class CityPost extends Component {
   render() {
     return (
-        <div className="cityPost">
+        <div className="CityPost">
             <h1>title post</h1>
-
+            
         </div>
     );
   }
