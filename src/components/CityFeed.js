@@ -18,7 +18,7 @@ class CityFeed extends Component {
     return (
 
       <div className="cityFeed">
-          <CityInfo /> // renders information specific to THIS city only
+          <CityInfo cityName="San Francisco"/> // renders information specific to THIS city only
           <AllCityPosts /> // renders all CityPosts that ANY user has published about this city
           <CommentForm /> // renders form to create new post about THIS city, on submit will close and add this post to CityPosts
       </div>
