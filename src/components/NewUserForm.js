@@ -1,50 +1,39 @@
 import React, {Component} from 'react';
-import '../css/Splash.css';
-import 'react-materialize';
-import { browserHistory } from 'react-router';
-
+import "../css/SignUpForm.css"
 
 
 export default class NewUserForm extends Component {
+    createUser(e) {
+        e.preventDefault();
+        console.log("Created a new user!");
+        const newUser = {
+            userName: this.userName.value,
+            password: this.password.value,
+            currentLocation: this.currentLocation.value
+        }
 
-  // goToUserCity(e) {
-  //   e.preventDefault();
-  //   browserHistory.push('/user-city');
-  // }
-  //
-  //
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = {value: {}};
-  //
-  //     this.handleChange = this.handleChange.bind(this);
-  //     this.handleSubmit = this.handleSubmit.bind(this);
-  //   }
-  //
-  //   handleChange(event) {
-  //     this.setState({value: event.target.value});
-  //   }
-  //
-  //   handleSubmit(event) {
-  //     console.log('A post was made: ' + this.state.value);
-  //     // TODO: write the setState function/method to store post's contents in State
-  //     event.preventDefault();
-  //  }
+console.log({newUser});
+        this.NewUserForm.reset();
+ this.props.addUser(newUser);
+    }
 
     render() {
-      return (
-        <form onSubmit={this.handleSubmit}>
-            <label>
-              <input placeholder="User Name" type="text" value={this.props.value} onChange={this.handleChange} />
-            </label>
-            <label>
-              <input placeholder="Password" type="password" value={this.props.value} onChange={this.handleChange} />
-            </label>
-            <label>
-              <input placeholder="Current Location" type="text" value={this.props.value} onChange={this.handleChange} />
-            </label>
-            <input type="submit" value="Submit"/>
-        </form>
-      );
+        return (
+          <div className="signUp" id="signUp">
+           <h1>Create A Profile!</h1>
+            <form ref={(input) => this.NewUserForm = input} onSubmit={(e) => this.createUser(e)}>
+                <label>
+                    <input ref={(input) => this.userName = input} placeholder="User Name" type="text"/>
+                </label>
+                <label>
+                    <input ref={(input) => this.password = input} placeholder="Create Password" type="text"/>
+                </label>
+                <label>
+                    <input ref={(input) => this.currentLocation = input} placeholder="Current Location" type="text"/>
+                </label>
+                <input className="btn waves-effect waves-light" type="submit" value="Submit"/>
+            </form>
+</div>
+        );
     }
-  }
+}

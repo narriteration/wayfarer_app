@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import NewUserForm from './NewUserForm.js';
 
+
 class SignInForm extends Component {
-  render() {
-    return (
-
-      <NewUserForm />
-
-    );
-  }
+    render() {
+        return (
+            <div>
+                <NewUserForm/>
+            </div>
+        );
+    }
 }
 
 export default SignInForm;

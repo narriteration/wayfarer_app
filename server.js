@@ -3,6 +3,7 @@
 //import dependencies
 var express = require('express'),
     mongoose = require('mongoose'),
+    cors = require('cors'),
     bodyParser = require('body-parser'),
     db = require('./models');
 
@@ -19,21 +20,23 @@ const port = process.env.API_PORT || 3001;
 
 //db config
 //ADD YOUR INFO HERE!
-//mongoose.connect
+// mongoose.connect("mongodb://admin:123@ds153710.mlab.com:53710/wayfarer-app")
 
 //config API to use bodyParser and look for JSON in req.body
 app.use(bodyParser.urlencoded({extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 //Prevent CORS errors
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Allow-Credentials', 'false');
   res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
 
   //Remove caching
    res.setHeader('Cache-Control', 'no-cache');
+   res.setHeader('Content-Type', 'application/json;charset=utf-8');
    next();
  });
 

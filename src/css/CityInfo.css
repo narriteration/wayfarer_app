@@ -1,0 +1,24 @@
+#bg {
+    background-image: url("/San Francisco.jpg");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cityInfo {
+    height: 250px;
+    background-color: #222;
+    color: white;
+    font-family: 'Julius Sans One';
+}
+
+h1 {
+    padding-top: 75px;
+}
+
+.formBody{
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}

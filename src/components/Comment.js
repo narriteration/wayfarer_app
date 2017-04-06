@@ -15,30 +15,6 @@ export default class Comment extends Component {
   }
 }
 
-
-// export default class Comment extends Component {
-//   rawMarkup() {
-//     let rawMarkup = marked(this.props.children.toString());
-//     return { __html: rawMarkup };
-//   }
-//   render() {
-//     return (
-//       <div style={ style.comment }>
-//         <li>
-//         <h3>{this.props.author} says:</h3>
-//         <span dangerouslySetInnerHTML={ this.rawMarkup() } />
-//         </li>
-//       </div>
-//     )
-//   }
-// }
-
-
-
-
-
-
-
 //  is passed a prop, it will render the same formatted comment each time
 // DOES NOT render MULTIPLE
 //
