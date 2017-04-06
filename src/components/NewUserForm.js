@@ -6,29 +6,29 @@ import { browserHistory } from 'react-router';
 
 export default class NewUserForm extends Component {
 
-  goToUserCity(e) {
-    e.preventDefault();
-    browserHistory.push('/user-city');
-  }
-
-
-    constructor(props) {
-      super(props);
-      this.state = {value: {}};
-
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-
-    handleSubmit(event) {
-      console.log('A post was made: ' + this.state.value);
-      // TODO: write the setState function/method to store post's contents in State
-      event.preventDefault();
-   }
+  // goToUserCity(e) {
+  //   e.preventDefault();
+  //   browserHistory.push('/user-city');
+  // }
+  //
+  //
+  //   constructor(props) {
+  //     super(props);
+  //     this.state = {value: {}};
+  //
+  //     this.handleChange = this.handleChange.bind(this);
+  //     this.handleSubmit = this.handleSubmit.bind(this);
+  //   }
+  //
+  //   handleChange(event) {
+  //     this.setState({value: event.target.value});
+  //   }
+  //
+  //   handleSubmit(event) {
+  //     console.log('A post was made: ' + this.state.value);
+  //     // TODO: write the setState function/method to store post's contents in State
+  //     event.preventDefault();
+  //  }
 
     render() {
       return (
