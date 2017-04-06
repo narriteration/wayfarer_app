@@ -4,10 +4,10 @@ var mongoose = require('mongoose'),
 var CommentsSchema = new Schema({
     comment: String,
     // make this a object of type object reference (see mongoose associations lab in our schedule)
-    _user: [User.schema],
+    _user: String,
     datePosted: String,
     // make this a object of type object reference (see mongoose associations lab in our schedule)
-    _location: [Location.schema]
+    _location: String
 }, {
     versionKey: false
 });
