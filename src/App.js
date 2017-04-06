@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import 'react-materialize';
-import NavBarMain from './components/NavBarMain';
 import CommentForm from './components/CommentForm';
-import Comment from './components/Comment';
+import NewUserForm from './components/NewUserForm'
 
-
-class App extends Component {
+export default class App extends Component {
     constructor() {
       super();
       this.addComment = this.addComment.bind(this);
+      this.addUser = this.addUser.bind(this);
     }
     state = {
-      comments: {}
+      comments: {},
+      users: {}
     }
 
     addComment(thisComment) {
@@ -21,23 +21,20 @@ class App extends Component {
       this.setState({ comments })
     }
 
+  addUser(newUser) {
+    const users = {...this.state.users};
+    const timestamp = Date.now();
+    users[`user-${timestamp}`] = newUser;
+    this.setState({ users })
+  }
    render() {
      return (
         <div className="app">
-            <NavBarMain />
+          <h1>hello world</h1>
             <CommentForm addComment={this.addComment}  />
-            <ul>
-                {
-                    Object
-                        .keys(this.state.comments)
-                        .map(key=> <Comment key={key} details={this.state.comments[key]} />)
-
-                }
-            </ul>
+            <NewUserForm addUser={this.addUser} />
         </div>
      );
    }
 
 }
-
-export default App;
