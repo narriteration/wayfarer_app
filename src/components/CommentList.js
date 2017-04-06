@@ -22,6 +22,11 @@ class CommentList extends Component {
 export default CommentList;
 
 
+
+
+//
+//
+//
 // === CommentContainer
 // goal: render ALL comments in db
 //
@@ -29,7 +34,7 @@ export default CommentList;
 // import React, {Component} from 'react'
 // import CommentModel from '......../models/CommentModel'
 //
-// class TodosContainer extends Component {
+// class CommentsList extends Component {
 //   render(){
 //     CommentModel.all().then( (res) => {
 //       console.log(res);
@@ -37,9 +42,14 @@ export default CommentList;
 //     return (
 //       <div className='commentList'>
 //         <h2>This is a comments container/list</h2>
+//
+//
+//
+// // render multiple comment components
+// 
 //       </div>
 //     )
 //   }
 // }
 //
-// export default TodosContainer
+// export default CommentsList
