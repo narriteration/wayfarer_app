@@ -14,7 +14,6 @@ class NavBarMain extends Component {
     return (
 
       <div className="navBarMain">
-<<<<<<< HEAD
       <nav>
          <div className="nav-wrapper">
            <a href="#" className="brand-logo">Wayfarer</a>
@@ -25,18 +24,6 @@ class NavBarMain extends Component {
          </div>
          </nav>
     </div>
-=======
-          <nav>
-               <div className="nav-wrapper">
-                   <a href="#" className="brand-logo">Wayfarer</a>
-                   <ul id="nav-mobile" className="right">
-                       <li><input id="search" type="search" required placeholder="Search..."/></li>
-                       <li><a href="/">Log Out</a></li>
-                   </ul>
-               </div>
-          </nav>
-       </div>
->>>>>>> c069e8ad051249751ab1e5b77bafa94374102f76
 
       );
     }
