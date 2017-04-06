@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import 'react-materialize';
-import CommentForm from './components/CommentForm';
 import NavBarMain from './components/NavBarMain';
+import CommentForm from './components/CommentForm';
+import Comment from './components/Comment';
+
 
 class App extends Component {
     constructor() {
@@ -24,6 +26,14 @@ class App extends Component {
         <div className="app">
             <NavBarMain />
             <CommentForm addComment={this.addComment}  />
+            <ul>
+                {
+                    Object
+                        .keys(this.state.comments)
+                        .map(key=> <Comment key={key} details={this.state.comments[key]} />)
+
+                }
+            </ul>
         </div>
      );
    }
