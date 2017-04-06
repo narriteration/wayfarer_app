@@ -9,13 +9,15 @@ import CityInfo from './components/CityInfo';
 import Comment from './components/Comment';
 
 
-class App extends Component {
+export default class App extends Component {
     constructor() {
       super();
       this.addComment = this.addComment.bind(this);
+      this.addUser = this.addUser.bind(this);
     }
     state = {
-      comments: {}
+      comments: {},
+      users: {}
     }
 
     addComment(thisComment) {
@@ -31,24 +33,22 @@ class App extends Component {
         });
     }
 
+  addUser(newUser) {
+    const users = {...this.state.users};
+    const timestamp = Date.now();
+    users[`user-${timestamp}`] = newUser;
+    this.setState({ users })
+  }
    render() {
      return (
         <div className="app">
+
             <NavBarMain />
             <CityInfo />
             <CommentForm addComment={this.addComment}  />
-            <ul>
-                {
-                    Object
-                        .keys(this.state.comments)
-                        .map(key=> <Comment key={key} details={this.state.comments[key]} />)
-
-                }
-            </ul>
+            <NewUserForm addUser={this.addUser} />
         </div>
      );
    }
 
 }
-
-export default App;
