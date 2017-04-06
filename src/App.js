@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import 'react-materialize';
-import NavBarMain from './components/NavBarMain'
-import CityFeed from './components/CityFeed'
-import
+import NavBarMain from './components/NavBarMain';
+import CityFeed from './components/CityFeed';
 
 class App extends Component {
  render() {
