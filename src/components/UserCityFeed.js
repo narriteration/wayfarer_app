@@ -4,7 +4,7 @@ import 'react-materialize';
 import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
 import NewPostForm from './NewPostForm';
-import navBarMain from './NavBarMain';
+import NavBarMain from './NavBarMain';
 
 class UserCityFeed extends Component {
 
