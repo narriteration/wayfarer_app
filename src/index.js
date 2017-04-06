@@ -4,8 +4,10 @@ import { Router, Route, browserHistory } from 'react-router';
 import Splash from '../src/components/Splash';
 import App from './App';
 import SignInForm from '../src/components/SignInForm';
-import SignUp from '../src/components/SignUp';
-import UserCityFeed from '../src/components/UserCityFeed'
+
+import SignUpForm from '../src/components/SignUpForm';
+import CityFeed from '../src/components/CityFeed'
+
 
 import './css/index.css';
 
@@ -15,8 +17,11 @@ ReactDOM.render(
     <Route path='/' component={Splash}></Route>
     <Route path='/wayfarer' component={App}></Route>
     <Route path='/sign-in' component={SignInForm}></Route>
-    <Route path='/sign-up' component={SignUp}></Route>
-    <Route path='/user-city' component={UserCityFeed}></Route>
+
+    <Route path='/sign-up' component={SignUpForm}></Route>
+    <Route path='/city-feed' component={CityFeed}></Route>
+
+  
   </Router>,
   document.getElementById('main')
 );

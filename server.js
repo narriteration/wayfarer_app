@@ -42,6 +42,39 @@ router.get('/', function(req, res) {
   res.json({message: 'API initialized'});
 });
 
+//Get Locations
+app.get('/api/locations', function(req, res) {
+  db.Location.find({}, function(err, locations){
+    res.json(locations);
+  })
+});
+
+//Create Location
+app.post('/api/locations', function(req, res) {
+  db.Location.create(req.body, function(err, location) {
+      if (err) { console.log('error', err); }
+      console.log(location);
+      res.json(location);
+    });
+})
+
+//get single location
+app.get('/api/locations/:locationId', function(req, res) {
+    db.Location.findOne({_id: req.params.locationId}, function(err, foundLocation) {
+        if (err) {
+            console.log('got an error');
+        }
+        res.json(foundLocation)
+    })
+})
+
+
+app.get('/api/users', function(req, res) {
+  db.User.find({}, function(err, users){
+    res.json(users);
+  })
+});
+
 //creating user
 app.post('/api/user', function(req, res) {
   db.User.create(req.body, function(err, user) {

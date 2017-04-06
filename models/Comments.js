@@ -7,7 +7,7 @@ var CommentsSchema = new Schema({
     _user: String,
     datePosted: String,
     // make this a object of type object reference (see mongoose associations lab in our schedule)
-    _location: Object
+    _location: String
 }, {
     versionKey: false
 });

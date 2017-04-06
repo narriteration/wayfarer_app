@@ -1,5 +1,22 @@
 module.exports.locations = [
-  {Example 1},
-  {Example 2},
-  {Example 3}
+  {
+    "City": "Tokyo",
+    "Country": "Japan"
+  },
+  {
+    "City": "Jakarta",
+    "Country": "Indonesia"
+  },
+  {
+    "City": "New York (Ny)",
+    "Country": "United States"
+  },
+  {
+    "City": "Seoul",
+    "Country": "South Korea"
+  },
+  {
+    "City": "Manila",
+    "Country": "Philippines"
+  }
 ]
