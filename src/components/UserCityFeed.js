@@ -3,7 +3,6 @@ import '../css/Splash.css';
 import 'react-materialize';
 import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
-import NewPostForm from './NewPostForm';
 import NavBarMain from './NavBarMain';
 
 class UserCityFeed extends Component {
@@ -20,7 +19,6 @@ class UserCityFeed extends Component {
       <div className="userCityFeed">
           <CityInfo /> // renders information specific to THIS city only
           <AllCityPosts /> // renders all CityPosts that ANY user has published about this city
-          <NewPostForm /> // renders form to create new post about THIS city, on submit will close and add this post to CityPosts
       </div>
     );
   }
