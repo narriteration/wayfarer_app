@@ -4,6 +4,7 @@ import 'react-materialize';
 import { browserHistory } from 'react-router';
 
 
+
 export default class NewUserForm extends Component {
 
   // goToUserCity(e) {
@@ -33,16 +34,16 @@ export default class NewUserForm extends Component {
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
-          <label>
-            <input placeholder="User Name" type="text" value={this.props.value} onChange={this.handleChange} />
-          </label>
-          <label>
-            <input placeholder="Password" type="text" value={this.props.value} onChange={this.handleChange} />
-          </label>
-          <label>
-            <input placeholder="Current Location" type="text" value={this.props.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
+            <label>
+              <input placeholder="User Name" type="text" value={this.props.value} onChange={this.handleChange} />
+            </label>
+            <label>
+              <input placeholder="Password" type="password" value={this.props.value} onChange={this.handleChange} />
+            </label>
+            <label>
+              <input placeholder="Current Location" type="text" value={this.props.value} onChange={this.handleChange} />
+            </label>
+            <input type="submit" value="Submit"/>
         </form>
       );
     }

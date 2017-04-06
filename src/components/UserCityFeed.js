@@ -3,11 +3,8 @@ import '../css/Splash.css';
 import 'react-materialize';
 import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
-<<<<<<< HEAD
 import NavBarMain from './NavBarMain';
-=======
 import CommentForm from './CommentForm';
->>>>>>> 579c8322616e3dbc6a8c46259aa4afc8c26716e6
 
 class UserCityFeed extends Component {
 
@@ -18,7 +15,6 @@ class UserCityFeed extends Component {
 // * render this component after user clicks submit on SignInForm.js
 
 
-<<<<<<< HEAD
   render() {
     return (
       <div className="userCityFeed">
@@ -27,7 +23,6 @@ class UserCityFeed extends Component {
       </div>
     );
   }
-=======
  render() {
    return (
      <div className="userCityFeed">
@@ -37,7 +32,6 @@ class UserCityFeed extends Component {
      </div>
    );
  }
->>>>>>> 579c8322616e3dbc6a8c46259aa4afc8c26716e6
 }
 
 export default UserCityFeed;
