@@ -7,16 +7,16 @@ class NavBarMain extends Component {
     return (
 
       <div className="navBarMain">
-      <nav>
-         <div className="nav-wrapper">
-           <a href="#" className="brand-logo">Wayfarer</a>
-           <ul id="nav-mobile" className="right hide-on-med-and-down">
-             <li><input id="search" type="search" required placeholder="Search..."/></li>
-             <li><a href="//">Log Out</a></li>
-           </ul>
-         </div>
-         </nav>
-    </div>
+          <nav>
+               <div className="nav-wrapper">
+                   <a href="#" className="brand-logo">Wayfarer</a>
+                   <ul id="nav-mobile" className="right">
+                       <li><input id="search" type="search" required placeholder="Search..."/></li>
+                       <li><a href="/">Log Out</a></li>
+                   </ul>
+               </div>
+          </nav>
+       </div>
 
       );
     }
@@ -24,3 +24,6 @@ class NavBarMain extends Component {
 
 
 export default NavBarMain;
+
+// DELETED THIS CONTENT TO MAKE IT RENDER (THE CLASS AT THE END):
+// <ul id="nav-mobile" className="right hide-on-med-and-down">

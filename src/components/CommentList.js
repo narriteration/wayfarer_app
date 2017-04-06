@@ -20,3 +20,26 @@ class CommentList extends Component {
 }
 
 export default CommentList;
+
+
+// === CommentContainer
+// goal: render ALL comments in db
+//
+//
+// import React, {Component} from 'react'
+// import CommentModel from '......../models/CommentModel'
+//
+// class TodosContainer extends Component {
+//   render(){
+//     CommentModel.all().then( (res) => {
+//       console.log(res);
+//     })
+//     return (
+//       <div className='commentList'>
+//         <h2>This is a comments container/list</h2>
+//       </div>
+//     )
+//   }
+// }
+//
+// export default TodosContainer

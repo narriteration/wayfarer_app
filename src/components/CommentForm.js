@@ -14,23 +14,29 @@ export default class CommentForm extends Component {
 
   render() {
     return (
-      <form ref={(input)=> this.commentForm = input } onSubmit={(e)=> this.createComment(e)}>
-          <label>
-            <input
-                ref={(input)=> this.title = input }
-                placeholder="Title"
-                type="text"  />
-          </label>
-          <label>
-            <input
-                ref={(input)=> this.comment = input }
-                placeholder="enter text here:"
-                type="text"  />
-          </label>
-          <input
-              type="submit"
-              value="Submit" />
-      </form>
+      <div>
+          <h6>Create A New Post About Your Favorite City</h6>
+          <form ref={(input)=> this.commentForm = input } onSubmit={(e)=> this.createComment(e)}>
+
+              <label>
+                <input
+                    ref={(input)=> this.title = input }
+                    placeholder="Title"
+                    type="text"  />
+              </label>
+
+              <label>
+                <input
+                    ref={(input)=> this.comment = input }
+                    placeholder="enter text here:"
+                    type="text"  />
+              </label>
+
+              <input
+                  type="submit"
+                  value="Submit" />
+          </form>
+    </div>
     );
   }
 }
