@@ -3,7 +3,8 @@ import '../css/Splash.css';
 import 'react-materialize';
 import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
-import NewPostForm from './NewPostForm';
+import CommentForm from './CommentForm';
+
 
 class CityFeed extends Component {
 
@@ -16,10 +17,12 @@ class CityFeed extends Component {
 
   render() {
     return (
+
       <div className="cityFeed">
-          <CityInfo /> // renders information specific to THIS city only
+          <CityInfo cityName="San Francisco"/> // renders information specific to THIS city only
           <AllCityPosts /> // renders all CityPosts that ANY user has published about this city
-          <NewPostForm /> // renders form to create new post about THIS city, on submit will close and add this post to CityPosts
+          <CommentForm /> // renders form to create new post about THIS city, on submit will close and add this post to CityPosts
+
       </div>
     );
   }

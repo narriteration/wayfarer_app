@@ -32,13 +32,12 @@ app.use(function(req, res, next) {
    res.setHeader('CacheControl', 'nocache');
    next();
  });
- //set route path		  //set route path
- app.route('/')
-   .get(function(req, res) {
-   res.send('Server.js is running');
-  // .post(function(req, res) {
-  //     db.Location.
-  // })
+
+
+//set route path
+app.get('/', function(req, res) {
+  res.json({message: 'API initialized'});
+
 });
 
 //creating user
@@ -119,11 +118,6 @@ app.get('/api/comments', function(req, res) {
         res.json(foundComments)
     })
 })
-
-
-
-
-
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wayfarer_app");
 

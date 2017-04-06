@@ -3,9 +3,11 @@ var mongoose = require('mongoose'),
 
 var CommentsSchema = new Schema({
     comment: String,
-    userId: String,
+    // make this a object of type object reference (see mongoose associations lab in our schedule)
+    _user: String,
     datePosted: String,
-    location: Object
+    // make this a object of type object reference (see mongoose associations lab in our schedule)
+    _location: Object
 }, {
     versionKey: false
 });

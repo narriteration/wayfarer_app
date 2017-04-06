@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'react-materialize';
 import NavBarMain from './components/NavBarMain'
-import UserCityFeed from './components/UserCityFeed'
+import CityFeed from './components/CityFeed'
 
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
    return (
       <div className="app">
         <NavBarMain />
-        <UserCityFeed />
+        <CityFeed />
       </div>
    );
  }
