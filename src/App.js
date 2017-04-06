@@ -1,7 +1,13 @@
+'use strict'
+
 import React, { Component } from 'react';
 import 'react-materialize';
+import axios from 'axios';
+import NavBarMain from './components/NavBarMain';
 import CommentForm from './components/CommentForm';
-import NewUserForm from './components/NewUserForm'
+import CityInfo from './components/CityInfo';
+import Comment from './components/Comment';
+
 
 export default class App extends Component {
     constructor() {
@@ -18,7 +24,13 @@ export default class App extends Component {
       const comments = {...this.state.comments};
       const timestamp = Date.now();
       comments[`comment-${timestamp}`] = thisComment;
+      console.log("trying to post: ", thisComment);
       this.setState({ comments })
+      axios.post("localhost:3001/api/comments", thisComment)
+        .catch(err => {
+          console.log(err);
+          this.setState({ comments })
+        });
     }
 
   addUser(newUser) {
@@ -30,7 +42,9 @@ export default class App extends Component {
    render() {
      return (
         <div className="app">
-          <h1>hello world</h1>
+
+            <NavBarMain />
+            <CityInfo />
             <CommentForm addComment={this.addComment}  />
             <NewUserForm addUser={this.addUser} />
         </div>
