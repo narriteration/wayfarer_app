@@ -20,7 +20,7 @@ console.log({newUser});
     render() {
         return (
           <div className="signUp" id="signUp">
-           <h1>Create A Profile!</h1>
+           <h4>Create A Profile!</h4>
             <form ref={(input) => this.NewUserForm = input} onSubmit={(e) => this.createUser(e)}>
                 <label>
                     <input ref={(input) => this.userName = input} placeholder="User Name" type="text"/>

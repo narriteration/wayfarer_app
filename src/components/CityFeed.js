@@ -5,7 +5,6 @@ import CityInfo from './CityInfo.js';
 import AllCityPosts from './AllCityPosts';
 import CommentForm from './CommentForm';
 import NavBarMain from './NavBarMain'
-import UserProfile from './UserProfile'
 
 
 
@@ -20,6 +19,7 @@ class CityFeed extends Component {
     return (
 
       <div className="cityFeed">
+          <NavBarMain />
           <CityInfo cityName="San Francisco"/>
           <CommentForm />
           <AllCityPosts />
