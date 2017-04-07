@@ -14,7 +14,7 @@ export default class NewUserForm extends Component {
 
 console.log({newUser});
         this.NewUserForm.reset();
- this.props.addUser(newUser);
+        this.props.addUser(newUser);
     }
 
     render() {
