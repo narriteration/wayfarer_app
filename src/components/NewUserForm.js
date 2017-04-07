@@ -26,7 +26,7 @@ console.log({newUser});
                     <input ref={(input) => this.userName = input} placeholder="User Name" type="text"/>
                 </label>
                 <label>
-                    <input ref={(input) => this.password = input} placeholder="Create Password" type="text"/>
+                    <input ref={(input) => this.password = input} placeholder="Create Password" type="password"/>
                 </label>
                 <label>
                     <input ref={(input) => this.currentLocation = input} placeholder="Current Location" type="text"/>
