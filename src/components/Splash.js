@@ -6,7 +6,7 @@ import { browserHistory } from 'react-router';
 
 class Splash extends Component {
 
- goToLogIn(e) {
+ goToSignInForm(e) {
    e.preventDefault();
    console.log('You changed URL');
    //this.history.push('/sign-in');
@@ -25,7 +25,7 @@ class Splash extends Component {
          <div className="Title">
             <h1>Welcome to Wayfarer!</h1>
             <p>A travel community for you to share city-specific tips about your favorite locations around the world.</p>
-            <a className="btn waves-effect waves-light" type="submit" onClick={(e) => this.goToLogIn(e)}>Log In</a>
+            <a className="btn waves-effect waves-light" type="submit" onClick={(e) => this.goToSignInForm(e)}>Log In</a>
             <a className="btn waves-effect waves-light" type="submit" onClick={(e) => this.goToSignUp(e)}>Sign Up</a>
      </div>
    </div>

@@ -1,15 +1,30 @@
 import React, {Component} from 'react';
-import NewUserForm from './NewUserForm.js';
+import 'react-materialize';
+import { browserHistory } from 'react-router';
 
 
-class SignInForm extends Component {
+export class SignInForm extends Component {
+
+  goToUserProfile(e) {
+    e.preventDefault();
+    browserHistory.push('/user-profile');
+  }
+
+
     render() {
         return (
-            <div>
-                <NewUserForm/>
-            </div>
+          <div className="signUp" id="signUp">
+           <h1>Sign In!</h1>
+            <form>
+                <label>
+                    <input placeholder="User Name" type="text"/>
+                </label>
+                <label>
+                    <input placeholder="Password" type="text"/>
+                </label>
+                <input className="btn waves-effect waves-light" type="submit" onClick={(e) => this.goToUserProfile(e)}>Sign In</input>
+            </form>
+          </div>
         );
     }
 }
-
-export default SignInForm;

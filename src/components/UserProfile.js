@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../css/UserProfile.css';
+import NavBarMain from './NavBarMain';
 
 export default class UserProfile extends Component {
     render(){
