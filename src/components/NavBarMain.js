@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Splash.css';
 import 'react-materialize';
+import { Link } from 'react-router';
 
 class NavBarMain extends Component {
   render() {
@@ -13,6 +14,8 @@ class NavBarMain extends Component {
                    <ul id="nav-mobile" className="right">
                        <li><input id="search" type="search" required placeholder="Search..."/></li>
                        <li><a href="/">Log Out</a></li>
+                       <li><a href='/city-feed'>City Feed</a></li>
+                       <Link to='/'>Profile</Link>
                    </ul>
                </div>
           </nav>

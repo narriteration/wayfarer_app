@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import marked from 'marked';
-// import style from './style';
+
 
 export default class Comment extends Component {
   render() {
@@ -14,20 +13,3 @@ export default class Comment extends Component {
     )
   }
 }
-
-//  is passed a prop, it will render the same formatted comment each time
-// DOES NOT render MULTIPLE
-//
-// import React, {Component} from 'react'
-//
-// class Todo extends Component {
-//   render(){
-//     return(
-//       <p data-todos-index={this.props.todo.id}>
-//         <span>{this.props.todo.body}</span>
-//       </p>
-//     )
-//   }
-// }
-//
-// export default Todo
