@@ -20,11 +20,10 @@ class CityFeed extends Component {
     return (
 
       <div className="cityFeed">
-          <NavBarMain />
           <CityInfo cityName="San Francisco"/>
-          <AllCityPosts />
           <CommentForm />
-          <UserProfile />
+          <AllCityPosts />
+
       </div>
     );
   }
