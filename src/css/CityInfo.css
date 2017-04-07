@@ -3,7 +3,7 @@
     z-index: -1;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
 }
 
 .cityInfo {
@@ -14,7 +14,7 @@
 }
 
 h1 {
-    padding-top: 75px;
+    padding-top:50px;
 }
 
 .formBody{
