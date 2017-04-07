@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import marked from 'marked';
-// import style from './style';
+
 
 export default class Comment extends Component {
   render() {

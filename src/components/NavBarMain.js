@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import '../css/Splash.css';
 import 'react-materialize';
+import '../css/NavBar.css';
 
-class NavBarMain extends Component {
+
+export default class NavBarMain extends Component {
   render() {
     return (
 
-      <div className="navBarMain">
+      <div className="navBarMain" id="nav">
           <nav>
                <div className="nav-wrapper">
                    <a href="#" className="brand-logo">Wayfarer</a>
@@ -21,9 +22,6 @@ class NavBarMain extends Component {
       );
     }
   }
-
-
-export default NavBarMain;
 
 // DELETED THIS CONTENT TO MAKE IT RENDER (THE CLASS AT THE END):
 // <ul id="nav-mobile" className="right hide-on-med-and-down">
