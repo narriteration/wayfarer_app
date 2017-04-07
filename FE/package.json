@@ -1,0 +1,48 @@
+{
+  "name": "wayfarer-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "firebase": "^3.7.4",
+    "firebaseui": "^1.0.0",
+    "foreman": "^2.0.0",
+    "history": "^1.17.0",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.2",
+    "nodemon": "^1.11.0",
+    "re-base": "^2.7.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.4.2",
+    "react-materialize": "^0.18.1",
+    "react-router": "^3.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start-dev": "nf start -p 3000",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlogropif/wayfarer_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlogropif/wayfarer_app/issues"
+  },
+  "homepage": "https://github.com/carlogropif/wayfarer_app#readme"
+}

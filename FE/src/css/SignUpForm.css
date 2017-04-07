@@ -1,0 +1,33 @@
+/*TODO: keep classes, ids, and tags grouped*/
+
+.signUp {
+  background-image: url("/wayferer1.jpg");
+  bottom: 0px;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#signUp {
+  background-color: #222;
+  color: white;
+  font-family: 'Julius Sans One';
+  text-align: center;
+}
+
+form{
+ margin-left: 330px;
+ margin-right: 330px;
+}
+
+.btn:hover {
+    background-color: #8b10c7;
+}
+
+h4 {
+  margin-top: 250px;
+}

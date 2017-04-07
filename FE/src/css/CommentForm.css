@@ -1,0 +1,14 @@
+h6 {
+ font-family: 'Julius Sans One';
+ text-align: center;
+}
+
+.btn{
+      font-family: 'Julius Sans One';
+      text-transform: capitalize;
+      background-color: #6d1996;
+}
+
+.btn:hover {
+    background-color: #8b10c7;
+}
