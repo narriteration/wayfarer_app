@@ -22,11 +22,11 @@ export default class App extends Component {
       comments[`comment-${timestamp}`] = thisComment;
       console.log("trying to post: ", thisComment);
       this.setState({ comments });
-      // axios.post("localhost:3001/api/comments", thisComment)
-      //   .catch(err => {
-      //     console.log(err);
-      //     this.setState({ comments })
-      //   });
+      axios.post("localhost:3001/api/comments", thisComment)
+        .catch(err => {
+          console.log(err);
+          this.setState({ comments })
+        });
     }
 
    render() {

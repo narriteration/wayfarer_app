@@ -5,7 +5,6 @@ import Splash from '../src/components/Splash';
 import App from './App';
 import SignInForm from '../src/components/SignInForm';
 import UserProfile from '../src/components/UserProfile';
-
 import SignUp from '../src/components/SignUp';
 import CityFeed from '../src/components/CityFeed'
 

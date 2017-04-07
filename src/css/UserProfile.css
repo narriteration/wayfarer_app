@@ -1,22 +1,29 @@
-/*.fb-profile img.fb-image-lg {
+.fb-profile img.fb-image-lg {
     z-index: 0;
     width: 100%;
     margin-bottom: 10px;
 }
 
 .fb-image-profile {
-    /*margin: -90px 10px 0px 50px;*/
-    /*z-index: 9;
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
     width: 20%;
 }
 
-.fb-profile-text>h1 {
+.fb-profile-text>h2  {
     font-weight: 700;
-    font-size:16px;
+    font-size: 35px;
+    font-family: 'Julius Sans One';
+    margin-top: 25px;
 }
 
 .fb-image-profile {
     margin: -45px 10px 0px 25px;
     z-index: 9;
     width: 20%;
-}*/
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
