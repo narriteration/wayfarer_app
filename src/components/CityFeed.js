@@ -1,28 +1,32 @@
 import React, { Component } from 'react';
 import '../css/Splash.css';
 import 'react-materialize';
-// import CityInfo from './CityInfo.js';
-// import AllCityPosts from './AllCityPosts';
-// import CommentForm from './CommentForm';
+import CityInfo from './CityInfo.js';
+import AllCityPosts from './AllCityPosts';
+import CommentForm from './CommentForm';
+import NavBarMain from './NavBarMain'
+import UserProfile from './UserProfile'
 
 
 
 class CityFeed extends Component {
 
+// TODO: Styles
+// * write specific styles to make all three imported components pretty
+//
+// TODO: View logic
+// * render this component after user clicks submit on SignInForm.js
   render() {
     return (
 
-      <div>
-          <h1>CITY FEED</h1>
-          {this.props.children}
+      <div className="cityFeed">
+          <CityInfo cityName="San Francisco"/>
+          <CommentForm />
+          <AllCityPosts />
+
       </div>
     );
   }
 }
 
 export default CityFeed;
-
-//
-// <CityInfo cityName="San Francisco"/>
-// <AllCityPosts />
-// <CommentForm />
