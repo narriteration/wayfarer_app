@@ -1,13 +1,8 @@
-'use strict'
-
 import React, { Component } from 'react';
 import 'react-materialize';
 import axios from 'axios';
 import NavBarMain from './components/NavBarMain';
-import CommentForm from './components/CommentForm';
-import CityInfo from './components/CityInfo';
-import Comment from './components/Comment';
-
+import NewUserForm from './components/NewUserForm';
 
 export default class App extends Component {
     constructor() {
@@ -42,11 +37,8 @@ export default class App extends Component {
    render() {
      return (
         <div className="app">
-
             <NavBarMain />
-            <CityInfo />
-            <CommentForm addComment={this.addComment}  />
-            <NewUserForm addUser={this.addUser} />
+            <NewUserForm addUser={this.addUser}   />
         </div>
      );
    }
