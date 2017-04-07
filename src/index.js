@@ -15,13 +15,12 @@ import './css/index.css';
 
 ReactDOM.render(
   <Router history={browserHistory}>
+
     <Route path='/' component={Splash}></Route>
     <Route path='/wayfarer' component={App}></Route>
     <Route path='/sign-in' component={SignInForm}></Route>
-
     <Route path='/sign-up' component={SignUp}></Route>
     <Route path='/city-feed' component={CityFeed}></Route>
-
 
   </Router>,
   document.getElementById('main')

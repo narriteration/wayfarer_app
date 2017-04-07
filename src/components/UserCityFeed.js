@@ -6,7 +6,7 @@ import AllCityPosts from './AllCityPosts';
 import NavBarMain from './NavBarMain';
 import CommentForm from './CommentForm';
 
-class UserCityFeed extends Component {
+export default class UserCityFeed extends Component {
 
 // TODO: Styles
 // * write specific styles to make all three imported components pretty
@@ -33,5 +33,3 @@ class UserCityFeed extends Component {
    );
  }
 }
-
-export default UserCityFeed;

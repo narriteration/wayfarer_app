@@ -1,0 +1,11 @@
+#nav{
+    font-family: 'Julius Sans One';
+}
+
+.nav-wrapper {
+ background-color: #ea9f4f;
+
+}
+#search:hover{
+ background-color: #8b10c7;
+}
